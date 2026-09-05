@@ -1,0 +1,535 @@
+/* =========================================================
+   MEL-CON FOOTER
+   ========================================================= */
+
+.site-footer {
+    position: relative;
+
+    background: var(--dark);
+
+    color: var(--white);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   FOOTER CTA
+   ========================================================= */
+
+.footer-cta {
+    position: relative;
+
+    background: var(--primary);
+
+    overflow: hidden;
+}
+
+
+.footer-cta::after {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    right: -180px;
+    top: -220px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+.footer-cta-inner {
+    min-height: 300px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 60px 0;
+}
+
+
+.footer-eyebrow {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 0.72rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+.footer-cta h2 {
+    margin: 0;
+
+    max-width: 750px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.2rem, 4vw, 4.3rem);
+
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.04em;
+
+    color: var(--white);
+}
+
+
+/* =========================================================
+   CTA BUTTON
+   ========================================================= */
+
+.footer-cta-button {
+    position: relative;
+
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 175px;
+
+    min-height: 58px;
+
+    padding: 16px 28px;
+
+    background: var(--white);
+
+    color: var(--dark);
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.03em;
+
+    border: 1px solid var(--white);
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        transform var(--transition);
+}
+
+
+.footer-cta-button:hover {
+    background: var(--dark);
+
+    color: var(--white);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   MAIN FOOTER
+   ========================================================= */
+
+.footer-main {
+    padding: 90px 0 75px;
+
+    background: var(--dark);
+}
+
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 1.6fr 0.7fr 1fr 1fr;
+
+    gap: 70px;
+}
+
+
+/* =========================================================
+   COMPANY
+   ========================================================= */
+
+.footer-company {
+    max-width: 390px;
+}
+
+
+.footer-logo {
+    display: inline-flex;
+
+    margin-bottom: 28px;
+}
+
+
+.footer-logo img {
+    width: 170px;
+
+    height: auto;
+
+    max-height: 65px;
+
+    object-fit: contain;
+}
+
+
+.footer-company > p {
+    max-width: 370px;
+
+    margin-bottom: 28px;
+
+    color: rgba(255, 255, 255, 0.58);
+
+    font-size: 0.92rem;
+
+    line-height: 1.8;
+}
+
+
+.footer-company-tag {
+    font-size: 0.65rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.11em;
+
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.4);
+}
+
+
+.footer-company-tag span {
+    margin: 0 7px;
+
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+   ========================================================= */
+
+.footer-column h3 {
+    margin: 0 0 25px;
+
+    font-family: var(--font-heading);
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+
+    color: var(--white);
+}
+
+
+/* =========================================================
+   FOOTER LINKS
+   ========================================================= */
+
+.footer-links {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 13px;
+}
+
+
+.footer-links a {
+    position: relative;
+
+    display: inline-block;
+
+    color: rgba(255, 255, 255, 0.56);
+
+    font-size: 0.88rem;
+
+    line-height: 1.5;
+
+    transition:
+        color var(--transition),
+        transform var(--transition);
+}
+
+
+.footer-links a::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -3px;
+
+    width: 0;
+    height: 1px;
+
+    background: var(--primary);
+
+    transition: width var(--transition);
+}
+
+
+.footer-links a:hover {
+    color: var(--white);
+
+    transform: translateX(4px);
+}
+
+
+.footer-links a:hover::before {
+    width: 100%;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.footer-contact {
+    max-width: 240px;
+}
+
+
+.footer-contact-item {
+    margin-bottom: 22px;
+}
+
+
+.footer-contact-item span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 0.68rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.35);
+}
+
+
+.footer-contact-item p,
+.footer-contact-item a {
+    font-size: 0.88rem;
+
+    color: rgba(255, 255, 255, 0.68);
+
+    line-height: 1.6;
+}
+
+
+.footer-contact-item a:hover {
+    color: var(--white);
+}
+
+
+.footer-contact-link {
+    display: inline-flex;
+
+    margin-top: 10px;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid var(--primary);
+
+    color: var(--white);
+
+    font-size: 0.82rem;
+
+    font-weight: 600;
+
+    transition:
+        color var(--transition),
+        border-color var(--transition);
+}
+
+
+.footer-contact-link:hover {
+    color: #62B0E4;
+
+    border-color: #62B0E4;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+   ========================================================= */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.footer-bottom-inner {
+    min-height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.35);
+
+    font-size: 0.72rem;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .footer-cta-inner {
+        min-height: 270px;
+    }
+
+
+    .footer-grid {
+        grid-template-columns: 1.3fr 0.7fr 1fr;
+
+        gap: 55px;
+    }
+
+
+    .footer-company {
+        grid-column: span 3;
+
+        max-width: 600px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .footer-cta-inner {
+        min-height: auto;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 55px 0;
+    }
+
+
+    .footer-cta h2 {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+
+    .footer-cta-button {
+        width: 100%;
+    }
+
+
+    .footer-main {
+        padding: 65px 0 50px;
+    }
+
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    .footer-company {
+        grid-column: auto;
+
+        max-width: 100%;
+    }
+
+
+    .footer-column {
+        max-width: 100%;
+    }
+
+
+    .footer-contact {
+        max-width: 100%;
+    }
+
+
+    .footer-bottom-inner {
+        min-height: auto;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+
+        padding: 22px 0;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .footer-cta-inner {
+        padding: 45px 0;
+    }
+
+
+    .footer-main {
+        padding: 55px 0 40px;
+    }
+
+
+    .footer-logo img {
+        width: 145px;
+    }
+
+}
